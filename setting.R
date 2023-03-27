@@ -1,10 +1,18 @@
-if (!require("pacman")) (install.packages("pacman"));
+if (!require("pacman")) (install.packages("pacman"))
 pacman::p_load(
-  tidyverse, tidytext, tidymodels,
-  KoNLP
-)
+  tidyverse, magrittr,
+  tidytext, tidyr, tm,
+  bitTA, RcppMeCab,
+  lubridate, scales, topicmodels,ldatuning,
+  tidylo, rvest,
+  widyr,
+  wordcloud2)
 
-#### 테마 ####
-devtools::install_github("gadenbuie/rsthemes")
-rsthemes::try_rsthemes()
-### https://www.jdwblog.com/post/rsthemes/  참조
+# remotes::install_github("bit2r/bitTA")
+# install.packages("RcppMeCab")
+# install_mecab_ko()
+
+# install.packages("devtools")
+# devtools::install_github("gadenbuie/rsthemes")
+# rsthemes::install_rsthemes()
+# rsthemes::try_rsthemes()
